@@ -6,5 +6,3 @@
 -include $(TOP)/RELEASE.local
 -include $(TOP)/configure/RELEASE.local
 
-ADGENICAM = $(AREA_DETECTOR)/ADGenICam
-

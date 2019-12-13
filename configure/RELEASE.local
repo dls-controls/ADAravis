@@ -1,0 +1,13 @@
+SUPPORT=/dls_sw/prod/R3.14.12.7/support
+WORK=/dls_sw/work/R3.14.12.7/support
+
+ASYN=         $(SUPPORT)/asyn/4-34
+ADCORE=	      $(SUPPORT)/ADCore/3-6dls3
+ADGENICAM=    $(SUPPORT)/ADGenICam/1-0dls9
+
+
+ARAVIS=       /dls_sw/prod/tools/RHEL7-x86_64/aravis/0-6-0/prefix
+# comment this out if glib is installed in a standard place
+# you need at least glib 2.28
+
+EPICS_BASE=/dls_sw/epics/R3.14.12.7/base

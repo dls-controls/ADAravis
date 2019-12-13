@@ -12,12 +12,15 @@ DBD += ADAravisSupport.dbd
 
 USR_INCLUDES +=  $(addprefix -I, $(GLIB_INCLUDE))
 
-ifdef ARAVIS_INCLUDE
-  USR_INCLUDES += $(addprefix -I, $(ARAVIS_INCLUDE))
-endif
+# We need to link against aravis
+USR_INCLUDES += -I$(ARAVIS)/include/aravis-0.6
+aravis_DIR     = $(ARAVIS_LIB)
+USR_LIBS     += aravis-0.6
 
-LIB_LIBS += ADGenICam
 
-LIB_LIBS += glib-2.0
+
+USR_LIBS += ADGenICam
+
+USR_LIBS += glib-2.0
 
 include $(TOP)/configure/RULES
