@@ -31,7 +31,7 @@ class aravisCamera(GenICam):
         PORT    = Simple('Port name for the camera', str),
         ID      = Simple('Cam ip address, hostname, MAC address, or ID <manufacturer>-<serial>, (e.g. Prosilica-02-2166A-06844)', str),
         CLASS   = Choice('Camera class for custom commands',
-                         ["AVT_Manta_G235B","AVT_Manta_G609B","AVT_Manta_G125B","AVT_Mako_G234C","AVT_Manta_G235C","AVT_Prosilica_GC655C"]),
+                         ["AVT_Manta_G235B","AVT_Manta_G609B","AVT_Manta_G125B","AVT_Mako_G234C","AVT_Manta_G235C","AVT_Prosilica_GC655C","AVT_Mako_1_52","Prosilica_GC","AVT_Manta_1_44","AVT_Manta_G125C","AVT_Mako_G125C"]),
         PV_ALIAS   = Choice('Use alias template to keep some key PV names the same',
                          [0,1]),
         BUFFERS = Simple('Maximum number of NDArray buffers to be created for '
