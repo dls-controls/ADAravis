@@ -13,9 +13,9 @@ DBD += ADAravisSupport.dbd
 USR_INCLUDES +=  $(addprefix -I, $(GLIB_INCLUDE))
 
 # We need to link against aravis
-USR_INCLUDES += -I$(ARAVIS)/include/aravis-0.6
+USR_INCLUDES += -I$(ARAVIS)/include/aravis-0.8
 aravis_DIR     = $(ARAVIS_LIB)
-USR_LIBS     += aravis-0.6
+USR_LIBS     += aravis-0.8
 
 
 
