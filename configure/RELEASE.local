@@ -1,12 +1,14 @@
 SUPPORT=/dls_sw/prod/R3.14.12.7/support
 WORK=/dls_sw/work/R3.14.12.7/support
 
-ASYN=         /scratch/aravisTesting/asyn
-ADCORE=	      /scratch/aravisTesting/ADCore
-ADGENICAM=    /scratch/aravisTesting/ADGenICam
+ASYN=         $(SUPPORT)/asyn/4-39
+ADCORE=	      $(SUPPORT)/ADCore/3-9dls1
+ADGENICAM=    $(SUPPORT)/ADGenICam/1-3dls1
 
 
-ARAVIS=       /dls_sw/work/tools/RHEL7-x86_64/aravis/prefix
+ARAVIS = /dls_sw/prod/tools/RHEL7-x86_64/aravis/0-7-2/prefix
+
+
 # comment this out if glib is installed in a standard place
 # you need at least glib 2.28
 
