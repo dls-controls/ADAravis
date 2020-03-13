@@ -151,3 +151,24 @@ record(bo, "$(P)$(R)ARHWImageMode") {
   field(ONAM, "Yes")
   info(autosaveFields, "DESC VAL")
 }
+
+
+# Disable gui components as DataType and ColorMode should be adjusted using GC_PixelFormat
+record(mbbo, "$(P)$(R)DataType")
+{
+    field(DISA, "1")
+}
+record(mbbi, "$(P)$(R)DataType_RBV")
+{
+    field(DISA, "1")
+}
+record(mbbo, "$(P)$(R)ColorMode")
+{
+    field(DISA, "1")
+}
+record(mbbi, "$(P)$(R)ColorMode_RBV")
+{
+    field(DISA, "1")
+}
+
+
