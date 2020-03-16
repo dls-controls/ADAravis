@@ -3,7 +3,7 @@ WORK=/dls_sw/work/R3.14.12.7/support
 
 
 ASYN=         $(SUPPORT)/asyn/4-39
-ADCORE=	      $(SUPPORT)/ADCore/3-9dls1
+ADCORE=	      $(SUPPORT)/ADCore/3-9dls2
 ADGENICAM=    $(SUPPORT)/ADGenICam/1-3dls2
 
 
