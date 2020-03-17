@@ -6,6 +6,11 @@
 #% macro, TIMEOUT, Timeout, default 1
 #% macro, ADDR, Asyn Port address, default 0
 
+# This associates a BOY screen with the template
+# % gui, $(PORT), boydetail, aravisApp_opi/aravis_detail.opi, P=$(P), R=$(R), DESC=Camera
+# % gui, $(PORT), boyembed, aravisApp_opi/aravis_embed_box.opi, P=$(P), R=$(R), DESC=Camera
+# % gui, $(PORT), boyembed, aravisApp_opi/aravis_embed.opi, P=$(P), R=$(R), DESC=Camera
+
 include "ADGenICam.template"
 
 record(ai, "$(P)$(R)ARFramesCompleted")
