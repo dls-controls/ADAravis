@@ -44,6 +44,7 @@ class aravisCamera(GenICam):
             'AVT_Manta_G609B',
             'AVT_Manta_G895B',
             'AVT_Prosilica_GC655C',
+            'AVT_Prosilica_GC1280M',
             'AVT_Prosilica_GT5120',
             'Prosilica_GC']),
         PV_ALIAS= Choice('Use alias template to keep some key PV names the same',
