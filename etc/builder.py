@@ -15,13 +15,21 @@ class aravisCamera(GenICam):
     _SpecificTemplate = aravisCameraTemplate
     def __init__(self, P, R, PORT, ID, CLASS, PV_ALIAS, BUFFERS=50, MEMORY=-1, **args):
         # Init the superclass
-        self.__super.__init__(P, R, PORT, ID, CLASS, PV_ALIAS, BUFFERS, MEMORY)
+        self.__super.__init__(P, R, PORT, ID, CLASS, BUFFERS, MEMORY)
         # Update the attributes of self from the commandline args
         self.__dict__.update(locals())
         # Make an instance of our template
         makeTemplateInstance(self._SpecificTemplate, locals(), args)
         # Backwards compatible Manta
         # Init the camera specific class
+
+
+        class _alias(AutoSubstitution):
+            ModuleName = aravisCamera.ModuleName
+            TemplateFile = "PVAlias.template"
+
+        if PV_ALIAS > 0:
+            makeTemplateInstance(_alias, locals(), args)
 
     # __init__ arguments
     ArgInfo = makeArgInfo(__init__,
